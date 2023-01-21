@@ -44,6 +44,8 @@ ul {
     
     color: var(--white-cl);
     background-color: var(--primary-cl);
+
+    cursor: pointer;
 }
 
 .alternative-btn {
@@ -55,6 +57,8 @@ ul {
     color: var(--primary-cl);
     background-color: var(--light-cl);
     border-color: transparent;
+
+    cursor: pointer;
     
 }
 
