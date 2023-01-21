@@ -1,0 +1,155 @@
+:root {
+    --primary-cl: #4D5AE5;
+    --hover-btn-cl: #404BBF;
+    --dark-bg-cl: #2E2F42;
+    --primary-txt-cl: #434455;
+    --subtitle-txt-cl: #8E8F99;
+    --light-cl: #F4F4FD;
+    --white-cl: #ffffff;
+    --accent-cl: #E7E9FC;
+}
+
+body, a {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    line-height: calc(24 / 16);
+    letter-spacing: 0.02em;
+
+    color: var(--primary-txt-cl);
+
+    /* background-color: var(--white-cl) */
+}
+
+a {
+    letter-spacing: 0.04em;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover,
+a:focus {
+    color: var(--primary-cl);
+}
+
+ul {
+    list-style: none;
+}
+
+/* Button */
+
+.ptimary-btn {
+    font-weight: 500;
+    font-family: inherit;
+    border-color: transparent;
+    
+    color: var(--white-cl);
+    background-color: var(--primary-cl);
+}
+
+.alternative-btn {
+    font-weight: 500;
+    font-family: inherit;
+    font-size: 16px;
+    line-height: calc(24 / 16);
+
+    color: var(--primary-cl);
+    background-color: var(--light-cl);
+    border-color: transparent;
+    
+}
+
+.ptimary-btn:hover,
+.ptimary-btn:focus {
+    background-color: var(--hover-btn-cl);
+}
+
+.alternative-btn:hover,
+.alternative-btn:focus {
+    color: var(--white-cl);
+    background-color: var(--hover-btn-cl);
+}
+
+/* title h2-h3 */
+
+.section-title {
+    font-weight: 700;
+    font-size: 36;
+    line-height: calc(40/36);
+}
+
+.sub-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: calc(24 / 20);
+}
+
+/* Logo */
+
+.logo {
+    font-family: Raleway, sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: calc(24 / 18);
+    letter-spacing: 0.03em;
+
+    text-transform: uppercase;
+    color: var(--primary-cl);
+}
+
+.logo .dark-logo {
+    color: var(--dark-bg-cl);
+}
+
+.logo .light-logo {
+    color: var(--light-cl);
+}
+
+/* Nav */
+
+.top-nav-item {
+    font-weight: 500;
+} 
+
+.contact-us-item {
+    font-style: normal;
+}
+
+/* Hero section */
+
+.hero-section {
+    background-color: var(--dark-bg-cl);
+}
+
+.hero-section-title {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: calc(60 / 56);
+
+    color: var(--white-cl);
+}
+
+/* Our features section */
+
+/* What are we doing */
+
+/* Our team */
+
+.our-team {
+    background-color: var(--light-cl);
+}
+
+.our-team-item {
+    background-color: var(--white-cl);
+}
+
+/* Footer */
+
+.footer {
+    background-color: var(--dark-bg-cl);
+}
+
+.footer-txt {
+    color: var(--accent-cl);
+}
+
+/* Pornfolio */
