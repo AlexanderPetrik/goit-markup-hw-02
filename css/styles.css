@@ -9,30 +9,12 @@
     --accent-cl: #E7E9FC;
 }
 
-body, a {
+body {
     font-family: Roboto, sans-serif;
     font-size: 16px;
-    line-height: calc(24 / 16);
     letter-spacing: 0.02em;
-
     color: var(--primary-txt-cl);
-
-    /* background-color: var(--white-cl) */
-}
-
-a {
-    letter-spacing: 0.04em;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-a:hover,
-a:focus {
-    color: var(--primary-cl);
-}
-
-ul {
-    list-style: none;
+    background-color: var(--white-cl)
 }
 
 /* Button */
@@ -95,6 +77,7 @@ ul {
     font-size: 18px;
     line-height: calc(24 / 18);
     letter-spacing: 0.03em;
+    text-decoration: none;
 
     text-transform: uppercase;
     color: var(--primary-cl);
@@ -110,12 +93,33 @@ ul {
 
 /* Nav */
 
+.top-nav {
+    list-style: none;
+}
+
 .top-nav-item {
     font-weight: 500;
+    letter-spacing: 0.04em;
+    line-height: calc(24 / 16);
+    text-decoration: none;
 } 
+
+.contact-us {
+    list-style: none;
+    line-height: calc(24 / 16);
+}
 
 .contact-us-item {
     font-style: normal;
+    text-decoration: none;
+}
+
+.top-nav-item:hover,
+.top-nav-item:focus,
+.contact-us-item:hover,
+.contact-us-item:focus {
+    color: var(--primary-cl);
+    text-decoration: underline;     
 }
 
 /* Hero section */
