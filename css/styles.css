@@ -22,10 +22,12 @@ body {
 .ptimary-btn {
     font-weight: 500;
     font-family: inherit;
-    border-color: transparent;
+    line-height: calc(24 / 16);
+    letter-spacing: 0.04em;
     
     color: var(--white-cl);
     background-color: var(--primary-cl);
+    border-color: transparent;
 
     cursor: pointer;
 }
@@ -35,6 +37,7 @@ body {
     font-family: inherit;
     font-size: 16px;
     line-height: calc(24 / 16);
+    letter-spacing: 0.04em;
 
     color: var(--primary-cl);
     background-color: var(--light-cl);
@@ -58,9 +61,9 @@ body {
 /* title h2-h3 */
 
 .section-title {
-    font-weight: 700;
-    font-size: 36;
-    line-height: calc(40/36);
+    font-size: 36px;
+    line-height: calc(40 / 36);
+    text-align: center;
 }
 
 .sub-title {
@@ -99,7 +102,7 @@ body {
 
 .top-nav-item {
     font-weight: 500;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.02em;
     line-height: calc(24 / 16);
     text-decoration: none;
 } 
@@ -115,7 +118,11 @@ body {
 }
 
 .top-nav-item:hover,
-.top-nav-item:focus,
+.top-nav-item:focus {
+    color: var(--primary-cl);
+    text-decoration: underline;     
+}
+
 .contact-us-item:hover,
 .contact-us-item:focus {
     color: var(--primary-cl);
@@ -138,7 +145,19 @@ body {
 
 /* Our features section */
 
+.our-features-list {
+    list-style: none;
+}
+
+.our-features-item p {
+    line-height: calc(24 / 16);
+}
+
 /* What are we doing */
+
+.we-doing-list {
+    list-style: none;
+}
 
 /* Our team */
 
@@ -146,8 +165,16 @@ body {
     background-color: var(--light-cl);
 }
 
+.our-team-list {
+    list-style: none;
+}
+
 .our-team-item {
     background-color: var(--white-cl);
+}
+
+.our-team-item p {
+    line-height: calc(24 / 16);
 }
 
 /* Footer */
@@ -157,7 +184,20 @@ body {
 }
 
 .footer-txt {
+    line-height: calc(24 / 16);
     color: var(--accent-cl);
 }
 
 /* Pornfolio */
+
+.portfolio-filter {
+    list-style: none;
+}
+
+.portfolio-works {
+    list-style: none;
+}
+
+.portfolio-item {
+    line-height: calc(24 / 16);
+}
