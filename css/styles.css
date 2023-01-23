@@ -107,14 +107,14 @@ body {
     text-decoration: none;
 } 
 
-.contact-us {
+.contacts {
     list-style: none;
     line-height: calc(24 / 16);
 }
 
-.contact-us-item {
+.contacts-item {
     font-style: normal;
-    text-decoration: none;
+    text-decoration: none; /* этот стиль перебиваеться чем-то и цвет не наследуется, ошибку не могу найти */
 }
 
 .top-nav-item:hover,
@@ -123,10 +123,9 @@ body {
     text-decoration: underline;     
 }
 
-.contact-us-item:hover,
-.contact-us-item:focus {
-    color: var(--primary-cl);
-    text-decoration: underline;     
+.contacts-item:hover,
+.contacts-item:focus {
+    color: var(--primary-cl);    
 }
 
 /* Hero section */
