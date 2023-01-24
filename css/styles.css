@@ -19,32 +19,27 @@ body {
 
 /* Button */
 
-.ptimary-btn {
+.ptimary-btn,
+.alternative-btn {
     font-weight: 500;
+    font-style: 16px;
     font-family: inherit;
     line-height: calc(24 / 16);
     letter-spacing: 0.04em;
     
-    color: var(--white-cl);
-    background-color: var(--primary-cl);
     border-color: transparent;
 
     cursor: pointer;
 }
 
-.alternative-btn {
-    font-weight: 500;
-    font-family: inherit;
-    font-size: 16px;
-    line-height: calc(24 / 16);
-    letter-spacing: 0.04em;
+.ptimary-btn {
+    color: var(--white-cl);
+        background-color: var(--primary-cl);
+}
 
+.alternative-btn {
     color: var(--primary-cl);
     background-color: var(--light-cl);
-    border-color: transparent;
-
-    cursor: pointer;
-    
 }
 
 .ptimary-btn:hover,
@@ -105,6 +100,7 @@ body {
     letter-spacing: 0.02em;
     line-height: calc(24 / 16);
     text-decoration: none;
+    color: var(--primary-txt-cl);
 } 
 
 .contacts {
@@ -112,19 +108,19 @@ body {
     line-height: calc(24 / 16);
 }
 
-.contacts-item {
+.contacts-item a {
     font-style: normal;
+    color: var(--primary-txt-cl);
     text-decoration: none; /* этот стиль перебиваеться чем-то и цвет не наследуется, ошибку не могу найти */
 }
 
 .top-nav-item:hover,
 .top-nav-item:focus {
-    color: var(--primary-cl);
-    text-decoration: underline;     
+    color: var(--primary-cl);     
 }
 
-.contacts-item:hover,
-.contacts-item:focus {
+.contacts-item a:hover,
+.contacts-item a:focus {
     color: var(--primary-cl);    
 }
 
@@ -136,7 +132,6 @@ body {
 
 .hero-section-title {
     font-size: 56px;
-    font-weight: 700;
     line-height: calc(60 / 56);
 
     color: var(--white-cl);
